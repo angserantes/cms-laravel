@@ -1,0 +1,35 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: bisque;
+    margin: 0;
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+.menu li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+
+@media screen and (min-width: 520px) {
+    .menu{
+        display: flex;
+    }
+}
+
+#app{
+    margin: auto;
+    max-width: 800px;
+}
