@@ -13,6 +13,6 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\Post::class, 50)->create();
     }
 }
