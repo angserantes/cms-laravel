@@ -2,6 +2,17 @@
 
 @section('content')
 
-<h1>Contenido de home</h1>
+<html>
+
+<body>
+
+    <h1 style="font-size: 50px;" >EL RECETARIO DE ÁNGELA</h1>
+    <marquee style="margin-top:25px ;">
+        <img src="https://cdn7.kiwilimon.com/recetaimagen/28838/1900x1080/29610.jpg.webp" </marquee>
+
+
+</body>
+
+</html>
 
 @endsection

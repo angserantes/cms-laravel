@@ -33,3 +33,139 @@ body{
     margin: auto;
     max-width: 800px;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Sarabun:300,600');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #1e88e5;
+  --black: #000;
+  --dark-grey: #444;
+  --light-grey: #eee;
+  --red: #f44336;
+  --yellow: #fdd835;
+  --white: #fff;
+}
+
+body {
+  background: var(--light-grey);
+}
+
+.container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: 1;
+  height: 100vh;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-template-columns: minmax(300px, 1fr);
+  }
+}
+
+.card {
+  background: var(--white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.05);
+  font-family: Sarabun, sans-serif;
+  margin: 50px;
+  padding: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 245px;
+}
+
+.card:hover {
+  color: var(--white);
+  transform: translateY(-50px);
+}
+
+.card1:hover {
+  background: var(--red);
+  box-shadow: 0 15px 30px rgba(244,67,54,.65);
+}
+
+.card2:hover {
+  background: var(--blue);
+  box-shadow: 0 15px 30px rgba(30,136,229,.65);
+}
+
+.card3:hover {
+  background: var(--yellow);
+  box-shadow: 0 15px 30px rgba(253,216,53,.65);
+  color: var(--dark-grey);
+}
+
+.content__cover {
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 200px;
+}
+
+.cover__img--food1  {
+  object-position: -50px -20px;
+  width: 200%;
+}
+
+.cover__img--food2  {
+  object-position: -150px -80px;
+  width: 260%;
+}
+
+.cover__img--food3  {
+  object-position: -50px 0px;
+  width: 160%;
+}
+
+.content__title { font-size: 1.25em; }
+
+.title__divider { border: 0.5px dashed; }
+
+.footer__links {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.links__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.links__checkbox + label {
+  border: 1px solid;
+  display: inline-block;
+  height: 15px;
+  margin: 5px 5px -2px -8px;
+  width: 15px;
+}
+
+.card1:hover .footer__links,
+.card2:hover .footer__links {
+  color: var(--white);
+}
+
+.footer__links:hover { text-decoration: underline; }
+
+.card3:hover .footer__links {
+  color: var(--dark-grey);
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
