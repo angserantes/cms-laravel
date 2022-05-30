@@ -1,7 +1,9 @@
 @extends('layout')
 
 @section('content')
+
 <section class="container">
+
 <div class="card card1">
   <div class="card__content">
     <div class="content__cover">
