@@ -8,8 +8,15 @@
   <label for="fname">Nombre:</label><br>
   <input type="text" id="fname" name="fname" value=""><br>
   <label for="lname">Apellido:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="receta">Receta deseada:</label><br>
+  <input type="text" id="receta" name="receta value=""><br>
+  <label for="tiempo">Tiempo de realización:</label><br>
+  <input type="text" id="tiempo" name="tiempo" value=""><br>
+  <label for="email">Regista tu email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="email"></label><br>
+  <a href="#" class="myButton">Enviar</a>
 </form>
 
 @endsection
